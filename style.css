@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+
+}
+.game{
+    width: 500px;
+    height: 200px;
+    border: 0.3rem outset pink;
+  outline: 0.2rem solid khaki;
+  box-shadow: 0 0 0 4rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: auto;
+  padding: 1rem;
+  outline-offset: 0.1rem;
+  background-position: center;
+
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position:relative;
+    top: 150px;
+    
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 50px;}
+    70%{top: 50px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 40px;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        background-size: 120% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -ms-background-clip: text;
+        -ms-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        background-image: linear-gradient(45deg, 
+                          #7794ff, 
+                          #44107A,
+                          #FF1361,
+                          #FFF800);
+        animation: .8s shake infinite alternate;
+      }
+      
+      @keyframes shake {
+        0% { transform: skewX(-15deg); }
+        5% { transform: skewX(15deg); }
+        10% { transform: skewX(-15deg); }
+        15% { transform: skewX(15deg); }
+        20% { transform: skewX(0deg); }
+        100% { transform: skewX(0deg); }  
+      }
+    
+
+
+ 
+body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 228, 228);
+        }
